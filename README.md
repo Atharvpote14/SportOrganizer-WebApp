@@ -454,14 +454,14 @@ If you find this project interesting, consider starring the repository ⭐ and f
 <tr>
 <td align="center" width="250">
 <a href="https://github.com/Atharvpote14">
-<img src="https://github.com/YOUR_GITHUB_ID.png" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
+<img src="https://avatars.githubusercontent.com/u/223859743?v=4" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
 </a>
 <br/>
-<strong>Developer Name</strong>
+<strong>Atharv Pote</strong>
 <br/>
-<a href="https://github.com/YOUR_GITHUB_ID">@YOUR_GITHUB_ID</a>
+<a href="https://github.com/Atharvpote14">@AtharvPote14</a>
 <br/><br/>
-<a href="https://github.com/YOUR_GITHUB_ID">
+<a href="https://github.com/Atharvpote14">
 <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub Profile" />
 </a>
 </td>
