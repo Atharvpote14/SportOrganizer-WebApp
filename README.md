@@ -467,15 +467,15 @@ If you find this project interesting, consider starring the repository ⭐ and f
 </td>
 
 <td align="center" width="250">
-<a href="https://github.com/SECOND_DEVELOPER_ID">
-<img src="https://github.com/SECOND_DEVELOPER_ID.png" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
+<a href="https://github.com/Soham456-hash">
+<img src="https://avatars.githubusercontent.com/u/259264263?v=4" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
 </a>
 <br/>
 <strong>Second Developer Name</strong>
 <br/>
-<a href="https://github.com/SECOND_DEVELOPER_ID">@SECOND_DEVELOPER_ID</a>
+<a href="https://github.com/Soham456-hash">@SohamGaikwad</a>
 <br/><br/>
-<a href="https://github.com/SECOND_DEVELOPER_ID">
+<a href="https://github.com/Soham456-hash">
 <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub Profile" />
 </a>
 </td>
