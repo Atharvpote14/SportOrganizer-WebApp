@@ -444,6 +444,50 @@ If you find this project interesting, consider starring the repository ⭐ and f
 
 <br/>
 
+## 👨‍💻 Meet the Developers
+
+<div align="center">
+
+**The people behind Sport Organizer.** 🚀
+
+<table>
+<tr>
+<td align="center" width="250">
+<a href="https://github.com/Atharvpote14">
+<img src="https://github.com/YOUR_GITHUB_ID.png" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
+</a>
+<br/>
+<strong>Developer Name</strong>
+<br/>
+<a href="https://github.com/YOUR_GITHUB_ID">@YOUR_GITHUB_ID</a>
+<br/><br/>
+<a href="https://github.com/YOUR_GITHUB_ID">
+<img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub Profile" />
+</a>
+</td>
+
+<td align="center" width="250">
+<a href="https://github.com/SECOND_DEVELOPER_ID">
+<img src="https://github.com/SECOND_DEVELOPER_ID.png" width="120" height="120" alt="Developer GitHub Profile Picture" style="border-radius: 50%;" />
+</a>
+<br/>
+<strong>Second Developer Name</strong>
+<br/>
+<a href="https://github.com/SECOND_DEVELOPER_ID">@SECOND_DEVELOPER_ID</a>
+<br/><br/>
+<a href="https://github.com/SECOND_DEVELOPER_ID">
+<img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="View GitHub Profile" />
+</a>
+</td>
+
+</tr>
+</table>
+
+*Made with ❤️, teamwork, and a passion for technology.*
+
+</div>
+
+
 [⬆ Back to Top](#-sport-organizer)
 
 </div>
