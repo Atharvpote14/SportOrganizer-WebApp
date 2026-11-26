@@ -1,94 +1,79 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { PageHeader } from "@/components/layout/page-header"
+import { TournamentCard } from "@/components/features/tournaments/tournament-card"
+import type { TournamentCardData } from "@/components/features/tournaments/tournament-card"
 import { Button } from "@/components/ui/button"
-import { StatusBadge } from "@/components/shared/status-badge"
+import { Input } from "@/components/ui/input"
+import { Search } from "lucide-react"
 import Link from "next/link"
+
+const tournaments: TournamentCardData[] = [
+  {
+    id: "1",
+    name: "Inter-College Football Championship",
+    sportName: "Football",
+    status: "published",
+    startDate: "2025-03-15",
+    endDate: "2025-03-20",
+    location: "Main Stadium",
+    maxTeams: 16,
+    registeredTeams: 12,
+  },
+  {
+    id: "2",
+    name: "Basketball League 2025",
+    sportName: "Basketball",
+    status: "published",
+    startDate: "2025-04-01",
+    endDate: "2025-04-10",
+    location: "Sports Complex",
+    maxTeams: 10,
+    registeredTeams: 8,
+  },
+  {
+    id: "3",
+    name: "Cricket Premier Cup",
+    sportName: "Cricket",
+    status: "registration_closed",
+    startDate: "2025-04-15",
+    endDate: "2025-04-25",
+    location: "Cricket Ground",
+    maxTeams: 16,
+    registeredTeams: 16,
+  },
+]
 
 export default function TournamentsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
+      <PageHeader
+        title="Tournaments"
+        description="Discover and join sports tournaments"
+        action={
+          <Button asChild>
+            <Link href="/tournaments/new">Create Tournament</Link>
+          </Button>
+        }
+      />
+
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2">Tournaments</h1>
-        <p className="text-muted-foreground">Discover and join sports tournaments</p>
+        <div className="relative max-w-md">
+          <Search
+            className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
+            aria-hidden="true"
+          />
+          <Input
+            type="search"
+            placeholder="Search tournaments..."
+            className="pl-9"
+            aria-label="Search tournaments"
+          />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle>Inter-College Football Championship</CardTitle>
-            <CardDescription>Football • March 15-20, 2025</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Status</span>
-                <StatusBadge status="published" />
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Teams</span>
-                <span className="text-sm font-medium">12/16</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Venue</span>
-                <span className="text-sm font-medium">Main Stadium</span>
-              </div>
-              <Button className="w-full" asChild>
-                <Link href="/tournaments/1">View Details</Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Basketball League 2025</CardTitle>
-            <CardDescription>Basketball • April 1-10, 2025</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Status</span>
-                <StatusBadge status="published" />
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Teams</span>
-                <span className="text-sm font-medium">8/10</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Venue</span>
-                <span className="text-sm font-medium">Sports Complex</span>
-              </div>
-              <Button className="w-full" asChild>
-                <Link href="/tournaments/2">View Details</Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Cricket Premier Cup</CardTitle>
-            <CardDescription>Cricket • April 15-25, 2025</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Status</span>
-                <StatusBadge status="registration_closed" />
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Teams</span>
-                <span className="text-sm font-medium">16/16</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">Venue</span>
-                <span className="text-sm font-medium">Cricket Ground</span>
-              </div>
-              <Button className="w-full" variant="outline" asChild>
-                <Link href="/tournaments/3">View Details</Link>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {tournaments.map((tournament) => (
+          <TournamentCard key={tournament.id} tournament={tournament} />
+        ))}
       </div>
     </div>
   )
